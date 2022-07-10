@@ -1,0 +1,21 @@
+tasks:
+  - init: |
+      echo 'TODO: build project'
+    command: |
+      echo 'TODO: start app'
+github :
+   prebuilds :
+     # habilita para o branch master/default (padrão true) 
+    master : true 
+    # habilita para todos os branches neste repositório (padrão para false) 
+    branches : true 
+    # habilita para pull requests vindos deste repositório (padrão para true) 
+    pullRequests : true 
+    # habilita para pull requests vindos de forks (o padrão é false) 
+    pullRequestsFromForks : true 
+    # adiciona um botão "Review in Gitpod" como um comentário para pull requests (padrão para true) 
+    addComment : true 
+    #adicione um botão "Review in Gitpod" para receber solicitações (o padrão é false) 
+    addBadge : false 
+    # adiciona um rótulo quando a pré-compilação estiver pronta para receber solicitações (o padrão é false) 
+    addLabel : prebuilt -in-gitpod
